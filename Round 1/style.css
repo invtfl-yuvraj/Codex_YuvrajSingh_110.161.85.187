@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    width: 50%;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 1rem 1rem 1rem hsl(221, 100%, 96%);
+    border-radius: 2rem;
+
+
+}
+
+.main .result-sec {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 20rem;
+    height: inherit;
+    padding-block: 3rem;
+    background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 2rem;
+}
+
+.result-sec .result-head{
+    color: hsl(241, 100%, 89%);
+}
+
+.main .result-sec .output {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    text-align: center;
+    font-weight: bold;
+    color: hsl(0, 0%, 100%);
+    background-image: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+
+}
+
+.main .result-sec .output .data {
+    padding-top: 2.5rem;
+    font-size: 3rem;
+    
+}
+.main .result-sec .output .para {
+    color: hsl(241, 100%, 89%);
+    
+}
+
+.main .result-sec .result-state{
+    color: hsl(0, 0%, 100%);
+    font-size: 2rem;
+}
+
+.main .result-sec .result-foot{
+    color: hsl(241, 100%, 89%);
+    width: 70%;
+    text-align: center;
+}
+
+.main .summary-sec {
+    width: 14rem;
+    height: inherit;
+    margin: 2rem;
+    padding-block: 3rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+
+}
+
+.main .summary-sec .summary-head {
+    color: hsl(224, 30%, 27%);
+}
+
+.main .summary-sec .details .button{
+    padding-inline: 1rem;
+    border: none;
+    width: 18rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-block: 1rem;
+    border-radius: 0.5rem;
+}
+
+.main .summary-sec .details .button .left{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.continue{
+    border: none;
+    text-align: center;
+    width: 18rem;
+    color: hsl(241, 100%, 89%);
+    background-color: hsl(224, 30%, 27%);
+    height: 3rem;
+    border-radius: 2rem;
+}
+
+.main .summary-sec .details #reaction{
+    background-color: hsl(0, 100%, 88%);
+    color: hsl(0, 100%, 67%);
+    font-size: 1rem;
+}
+
+.main .summary-sec .details #memory{
+    background-color: hsl(39, 100%, 85%);
+    color: hsl(39, 100%, 56%);
+    font-size: 1rem;
+}
+
+.main .summary-sec .details #verbal{
+    background-color: hsl(166, 100%, 83%);
+    color: hsl(166, 100%, 37%);
+    font-size: 1rem;
+}
+
+.main .summary-sec .details #visual{
+    background-color: hsl(234, 100%, 86%);
+    color: hsl(234, 85%, 45%);
+    font-size: 1rem;
+}
+
+
+
