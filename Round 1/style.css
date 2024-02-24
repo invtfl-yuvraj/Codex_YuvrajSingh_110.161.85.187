@@ -40,7 +40,7 @@
     border-radius: 2rem;
 }
 
-.result-sec .result-head{
+.result-sec .result-head {
     color: hsl(241, 100%, 89%);
 }
 
@@ -62,15 +62,15 @@
 }
 .main .result-sec .output .para {
     color: hsl(241, 100%, 89%);
-    
+
 }
 
-.main .result-sec .result-state{
+.main .result-sec .result-state {
     color: hsl(0, 0%, 100%);
     font-size: 2rem;
 }
 
-.main .result-sec .result-foot{
+.main .result-sec .result-foot {
     color: hsl(241, 100%, 89%);
     width: 70%;
     text-align: center;
@@ -92,7 +92,17 @@
     color: hsl(224, 30%, 27%);
 }
 
-.main .summary-sec .details .button{
+.main .summary-sec .details .button p{
+    color: rgb(106, 100, 100);
+}
+
+.main .summary-sec .details .button p span{
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+
+.main .summary-sec .details .button {
     padding-inline: 1rem;
     border: none;
     width: 18rem;
@@ -104,14 +114,14 @@
     border-radius: 0.5rem;
 }
 
-.main .summary-sec .details .button .left{
+.main .summary-sec .details .button .left {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
 }
 
-.continue{
+.continue {
     border: none;
     text-align: center;
     width: 18rem;
@@ -119,31 +129,56 @@
     background-color: hsl(224, 30%, 27%);
     height: 3rem;
     border-radius: 2rem;
+    font-size: 1rem;
+    font-weight: bold;
 }
 
-.main .summary-sec .details #reaction{
-    background-color: hsl(0, 100%, 88%);
+.main .summary-sec .details #reaction {
+    background-color: hsl(0, 100%, 97%);
     color: hsl(0, 100%, 67%);
     font-size: 1rem;
 }
 
-.main .summary-sec .details #memory{
-    background-color: hsl(39, 100%, 85%);
+.main .summary-sec .details #memory {
+    background-color: hsl(41, 100%, 97%);
     color: hsl(39, 100%, 56%);
     font-size: 1rem;
 }
 
-.main .summary-sec .details #verbal{
-    background-color: hsl(166, 100%, 83%);
+.main .summary-sec .details #verbal {
+    background-color: hsl(167, 100%, 96%);
     color: hsl(166, 100%, 37%);
     font-size: 1rem;
 }
 
-.main .summary-sec .details #visual{
-    background-color: hsl(234, 100%, 86%);
+.main .summary-sec .details #visual {
+    background-color: hsl(236, 100%, 97%);
     color: hsl(234, 85%, 45%);
     font-size: 1rem;
 }
 
+@media screen and (max-width:375px) {
+    .main {
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+
+    }
+
+    .main .result-sec {
+        width: 100%;
+        height: 50%;
+    }
 
 
+    .main .summary-sec {
+        height: 50%;
+        width: 100%;
+        padding-left: 2rem;
+
+    }
+
+    .continue{
+        padding-block: 1rem;
+    }
+}
