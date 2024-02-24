@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cisco App dynamics</title>
+    <link rel="stylesheet" href="./main.css">
+
+    <!-- Mulish font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body class="font-mullish">
+
+    <!-- Navigation bar -->
+    <nav class="bg-deepBlue text-white">
+        <div class="lg:w-[1080px] lg:px-0 lg:py-0 px-8 py-6 w-auto mx-auto flex justify-between items-center">
+
+            <!-- logo -->
+            <a href="/">
+                <img src="./assets/nav_icons/cisco_logo.png" alt="logo" width="150px" height="40px" class="invert scale-150">
+            </a>
+
+            <!-- nav elements -->
+
+            <ul class="justify-between items-center space-x-6 py-2 hidden lg:flex">
+                <!-- <li
+                    class="border-b-4 py-4 border-lightBlue border-opacity-0 hover:border-opacity-100 hover:text-lightBlue transition-all duration-200">
+                    <a href="#">Home</a>
+                </li> -->
+                <li
+                    class="border-b-4 py-4 border-lightBlue border-opacity-0 hover:border-opacity-100 hover:text-lightBlue transition-all duration-200">
+                    <a href="#">About Us</a>
+                </li>
+                <li
+                    class="border-b-4 py-4 border-lightBlue border-opacity-0 hover:border-opacity-100 hover:text-lightBlue transition-all duration-200">
+                    <a href="#why">Why App Dynamics ?</a>
+                </li>
+                <li
+                    class="border-b-4 py-4 border-lightBlue border-opacity-0 hover:border-opacity-100 hover:text-lightBlue transition-all duration-200">
+                    <a href="#features">Features</a>
+                </li>
+                <li
+                    class="border-b-4 py-4 border-lightBlue border-opacity-0 hover:border-opacity-100 hover:text-lightBlue transition-all duration-200">
+                    <a href="#blog">Blogs</a>
+                </li>
+                <li
+                    class="border-b-4 py-4 border-lightBlue border-opacity-0 hover:border-opacity-100 hover:text-lightBlue transition-all duration-200">
+                    <a href="#faqs">FAQs</a>
+                </li>
+                <li
+                    class="border-b-4 py-4 border-lightBlue border-opacity-0 hover:border-opacity-100 hover:text-lightBlue transition-all duration-200">
+                    <a href="#">Feedback</a>
+                </li>
+            </ul>
+
+            <!-- country flag, login, signup buttons -->
+            <div class="flex justify-between space-x-4 items-center ">
+                <div class="country justify-between items-center hidden lg:flex">
+                    <img src="./assets/nav_icons/india-flag.svg" alt="indian flag">
+                    <img class="invert" src="./assets/nav_icons/down-arrow.svg" alt="down arrow icon">
+                </div>
+
+                <!-- login button  -->
+                <a href="./form.html"><button
+                        class="login px-4 py-2 space-x-2 border border-lightBlue rounded-md font-bold hover:bg-lightBlue transition-all duration-200:">Log
+                        In</button></a>
+
+                <!-- hamburger -->
+                <svg class="lg:hidden" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
+                    style="fill: rgb(255, 255, 255);">
+                    <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
+                </svg>
+
+                <!-- sign-up button  -->
+                <button
+                    class="sign_up justify-evenly items-center space-x-2 px-4 py-2 border rounded-md font-bold bg-white text-lightBlue hover:text-lightBlue500 transition-all duration-200 hidden lg:flex">
+                    <p>Sign up</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                        <path
+                            d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <div class="overflow-x-hidden relative w-full">
+        <!--Hero Section-->
+        <section class="relative bg-deepBlue">
+
+            <div class="w-10/12 max-w-[1080px] flex lg:flex-row justify-between items-center mx-auto flex-col">
+                <!--left part-->
+                <div class="space-y-8">
+                    <h1 class="font-bold text-[40px] leading-[1.2] text-white">Smart Agent for Cisco AppDynamics</h1>
+                    <div class="w-6 h-1 bg-greenLight"></div>
+                    <p class="text-[18px] leading-7 text-white opacity-70">
+                        Monitor your applications and sustain high performance across multi-cloud environments with AppDynamics.
+                    </p>
+                    <button
+                        class="bg-lightBlue text-white flex justify-evenly items-center space-x-2 py-4 px-4 rounded-md font-mullish text-lg font-bold hover:bg-lightBlue500 transition-all duration-200">
+                        <p>Take a Tour</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                            <path
+                                d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+
+                <!--right part-->
+                <img src="./assets/hero_section/Untitled design.png" alt="" class="w-full lg:max-w-[680px] py-48 lg:py-0">
+
+            </div>
+
+            <!--lower part-->
+            <div class="w-[101%] absolute left-0 right-0 ">
+                <img class="w-full object-fill overflow-x-hidden" src="./assets/hero_section/hero-shape.svg" alt="">
+            </div>
+
+        </section>
+
+        <!--feature section - 1-->
+        <section class="relative mt-48 overflow-hidden" id="why">
+            <img class="absolute h-40 w-60 -top-32 left-40 " src="./assets/feature-section-1/feature-section1-dottedrows.png" alt="">
+            <img class="absolute h-40 w-60 rotate-180 top-12 -right-4" src="./assets/feature-section-1/feature-section1-dottedrows.png"
+                alt="">
+            <div class="relative w-11/12 max-w-[1080px] mx-auto pt-4">
+                <!--heading-->
+                <h2 class="font-extrabold text-center  text-5xl md:text-5xl leading-[1.2] "> <span class="hidden md:inline">Why</span> <span
+                        class="md:hidden">Why</span>App Dynamics?</h2>
+                <div class="bg-greenLight w-6 h-1 mx-auto mt-4 mb-6"></div>
+
+                <!--content box-->
+                <div class="w-full min-h-[520px] bg-white flex rounded-md relative p-10 py-12 border">
+
+                    <!-- left part text-->
+                    <div class="flex flex-col justify-between items-start">
+                        <!-- heading -->
+                        <h3 class="text-3xl font-bold max-w-xl">Supercharge your business with the all‑powerful
+                            <span class="text-lightBlue">App Dynamics</span>
+                        </h3>
+                        <!-- check elements -->
+                        <ul class="space-y-2">
+                            <li class="flex items-start space-x-2 ">
+                                <i class="text-greenLight">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                                        <path
+                                            d="M21.03 5.72a.75.75 0 0 1 0 1.06l-11.5 11.5a.747.747 0 0 1-1.072-.012l-5.5-5.75a.75.75 0 1 1 1.084-1.036l4.97 5.195L19.97 5.72a.75.75 0 0 1 1.06 0Z">
+                                        </path>
+                                    </svg>
+                                </i>
+                                <p>Cloud Migration</p>
+                            </li>
+                            <li class="flex items-start space-x-2 ">
+                                <i class="text-greenLight">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                                        <path
+                                            d="M21.03 5.72a.75.75 0 0 1 0 1.06l-11.5 11.5a.747.747 0 0 1-1.072-.012l-5.5-5.75a.75.75 0 1 1 1.084-1.036l4.97 5.195L19.97 5.72a.75.75 0 0 1 1.06 0Z">
+                                        </path>
+                                    </svg>
+                                </i>
+                                <p>Cloud Native Monitoring</p>
+                            </li>
+                            <li class="flex items-start space-x-2 ">
+                                <i class="text-greenLight">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                                        <path
+                                            d="M21.03 5.72a.75.75 0 0 1 0 1.06l-11.5 11.5a.747.747 0 0 1-1.072-.012l-5.5-5.75a.75.75 0 1 1 1.084-1.036l4.97 5.195L19.97 5.72a.75.75 0 0 1 1.06 0Z">
+                                        </path>
+                                    </svg>
+                                </i>
+                                <p>Serverless Monitoring
+                                </p>
+                            </li>
+                            <li class="flex items-start space-x-2 ">
+                                <i class="text-greenLight">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                                        <path
+                                            d="M21.03 5.72a.75.75 0 0 1 0 1.06l-11.5 11.5a.747.747 0 0 1-1.072-.012l-5.5-5.75a.75.75 0 1 1 1.084-1.036l4.97 5.195L19.97 5.72a.75.75 0 0 1 1.06 0Z">
+                                        </path>
+                                    </svg>
+                                </i>
+                                <p>Micro Services
+                                </p>
+                            </li>
+                        </ul>
+
+                        <!-- get started button & hyperlink -->
+
+                        <div class="flex justify-center space-x-6">
+                            <a href="https://capture.navattic.com/clqe7png0000g0fjscou08md7?g=clqe85mbc00h10gjl37glc2al&s=0">
+                                <button
+                                    class="bg-lightBlue text-white flex justify-evenly items-center space-x-2 py-4 px-4 rounded-md font-mullish text-lg font-bold hover:bg-lightBlue500 transition-all duration-200">
+                                    <p>Get a Demo</p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                                        <path
+                                            d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z">
+                                        </path>
+                                    </svg>
+                                </button>
+                            </a>
+                            <!-- know more hyperlink -->
+                            <div
+                                class="text-lightBlue500 font-bold flex justify-center items-center group hover:text-grayBlue transition-all duration-200 ">
+                                <a href="https://www.appdynamics.com/company/why-appdynamics">Know More</a>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                                    <path
+                                        d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z">
+                                    </path>
+                                </svg>
+
+                            </div>
+                        </div>
+
+                        <!-- right part image -->
+                        <img class="h-96 lg:bottom-0 lg:max-w-xl max-w-sm hidden md:inline absolute right-0 bottom-0"
+                            src="./assets/feature-section-1/cisco images 2.png" alt="">
+
+                    </div>
+                </div>
+
+                <!-- more features -->
+                <div
+                    class="grid grid-rows-6 grid-cols-1 lg:grid-rows-2 lg:grid-cols-2 md:grid-rows-3 md:grid-cols-2 gap-4 w-full min-h-[520px]">
+
+                    <!-- more feature box-1 -->
+                    <div class="w-full min-h-60 relative cursor-pointer mt-10 group bg-transparent">
+                        <img class="absolute right-3 top-3 bg-lightBlue  w-12 h-12 rounded-full z-10
+                        transition-all duration-200" src="./assets/feature-section-1/payment-link-icon.svg" alt="">
+
+                        <svg viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+                            class="stroke-2 stroke-[#818597] h-full w-full absolute z-20 transition-all duration-100 group-hover:shadow-2xl group-hover:shadow-blue-500/20 group-hover:stroke-0"
+                            style="stroke-opacity: 0.15">
+                            <path d="m 0 6 
+                  a 6 6 0 0 1 6 -6 
+                  h 250.32501220703125 
+                  a 16 16 0 0 1 11 5 
+                  l 77 77 
+                  a 16 16 0 0 1 5 11 
+                  v 126 
+                  a 6 6 0 0 1 -6 6 
+                  h -337.32501220703125 
+                  a 6 6 0 0 1 -6 -6 
+                  z" fill="#fff"></path>
+                        </svg>
+
+                        <div class="relative z-30 flex flex-col justify-between w-full h-full p-6">
+                            <h3 class="text-2xl font-bold text-deepBlueHead ">Make confident decisions under <br> pressure</h3>
+                            <p class="text-grayText pb-6">Connect app performance to customer experience and business outcomes, helping you
+                                prioritize the most critical issues before they affect your customers.
+                            </p>
+                            <div
+                                class="text-lightBlue500 font-bold flex items-center group hover:text-grayBlue transition-all duration-200">
+                                <a href="#">Know More</a>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                                    <path
+                                        d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z">
+                                    </path>
+                                </svg>
+                            </div>
+
+                            <img src="./assets/feature-section-1/features-wave.svg" alt=""
+                                class="h-16 w-20 absolute bottom-4 right-0 invisible group-hover:visible transition-all duration-100">
+                        </div>
+                    </div>
+
+                    <!-- more feature box-2 -->
+                    <div class="w-full min-h-60 relative cursor-pointer mt-10 group bg-transparent">
+                        <img class="absolute right-3 top-3 bg-lightBlue  w-12 h-12 rounded-full z-10
+                        transition-all duration-200" src="./assets/feature-section-1/payment-link-icon.svg" alt="">
+
+                        <svg viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+                            class="stroke-2 stroke-[#818597] h-full w-full absolute z-20 transition-all duration-100 group-hover:shadow-2xl group-hover:shadow-blue-500/20 group-hover:stroke-0"
+                            style="stroke-opacity: 0.15">
+                            <path d="m 0 6 
+                  a 6 6 0 0 1 6 -6 
+                  h 250.32501220703125 
+                  a 16 16 0 0 1 11 5 
+                  l 77 77 
+                  a 16 16 0 0 1 5 11 
+                  v 126 
+                  a 6 6 0 0 1 -6 6 
+                  h -337.32501220703125 
+                  a 6 6 0 0 1 -6 -6 
+                  z" fill="#fff"></path>
+                        </svg>
+
+                        <div class="relative z-30 flex flex-col justify-between w-full h-full p-6">
+                            <h3 class="text-2xl font-bold text-deepBlueHead">Break down barriers between teams</h3>
+                            <p class="text-grayText pb-6">Support harmony during technological change across your organization with a
+                                fully-connected platform that reduces noise and supports fast, efficient teamwork.
+
+                            </p>
+                            <div
+                                class="text-lightBlue500 font-bold flex items-center group hover:text-grayBlue transition-all duration-200">
+                                <a href="#">Know More</a>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                                    <path
+                                        d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z">
+                                    </path>
+                                </svg>
+                            </div>
+
+                            <img src="./assets/feature-section-1/features-wave.svg" alt=""
+                                class="h-16 w-20 absolute bottom-4 right-0 invisible group-hover:visible transition-all duration-100">
+                        </div>
+                    </div>
+
+                    <!-- more feature box-3 -->
+                    <div class="w-full min-h-60 relative cursor-pointer mt-10 group bg-transparent">
+                        <img class="absolute right-3 top-3 bg-lightBlue  w-12 h-12 rounded-full z-10
+                        transition-all duration-200" src="./assets/feature-section-1/payment-link-icon.svg" alt="">
+
+                        <svg viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+                            class="stroke-2 stroke-[#818597] h-full w-full absolute z-20 transition-all duration-100 group-hover:shadow-2xl group-hover:shadow-blue-500/20 group-hover:stroke-0"
+                            style="stroke-opacity: 0.15">
+                            <path d="m 0 6 
+                  a 6 6 0 0 1 6 -6 
+                  h 250.32501220703125 
+                  a 16 16 0 0 1 11 5 
+                  l 77 77 
+                  a 16 16 0 0 1 5 11 
+                  v 126 
+                  a 6 6 0 0 1 -6 6 
+                  h -337.32501220703125 
+                  a 6 6 0 0 1 -6 -6 
+                  z" fill="#fff"></path>
+                        </svg>
+
+                        <div class="relative z-30 flex flex-col justify-between w-full h-full p-6">
+                            <h3 class="text-2xl font-bold text-deepBlueHead">See everything, be everything for <br> your customers</h3>
+                            <p class="text-grayText pb-6">Ingest and analyze data across the entire stack and get detailed visualizations to
+                                help you take action and improve your user experience and business results.</p>
+                            <div
+                                class="text-lightBlue500 font-bold flex items-center group hover:text-grayBlue transition-all duration-200">
+                                <a href="#">Know More</a>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                                    <path
+                                        d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z">
+                                    </path>
+                                </svg>
+                            </div>
+
+                            <img src="./assets/feature-section-1/features-wave.svg" alt=""
+                                class="h-16 w-20 absolute bottom-4 right-0 invisible group-hover:visible transition-all duration-100">
+                        </div>
+                    </div>
+
+                    <!-- more feature box-4 -->
+                    <div class="w-full min-h-60 relative cursor-pointer mt-10 group bg-transparent">
+                        <img class="absolute right-3 top-3 bg-lightBlue  w-12 h-12 rounded-full z-10
+                        transition-all duration-200" src="./assets/feature-section-1/payment-link-icon.svg" alt="">
+
+                        <svg viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+                            class="stroke-2 stroke-[#818597] h-full w-full absolute z-20 transition-all duration-100 group-hover:shadow-2xl group-hover:shadow-blue-500/20 group-hover:stroke-0"
+                            style="stroke-opacity: 0.15">
+                            <path d="m 0 6 
+                  a 6 6 0 0 1 6 -6 
+                  h 250.32501220703125 
+                  a 16 16 0 0 1 11 5 
+                  l 77 77 
+                  a 16 16 0 0 1 5 11 
+                  v 126 
+                  a 6 6 0 0 1 -6 6 
+                  h -337.32501220703125 
+                  a 6 6 0 0 1 -6 -6 
+                  z" fill="#fff"></path>
+                        </svg>
+
+                        <div class="relative z-30 flex flex-col justify-between w-full h-full p-6">
+                            <h3 class="text-2xl font-bold text-deepBlueHead">Generate immediate value with low overhead</h3>
+                            <p class="text-grayText pb-6">Configure everything within minutes using Smart Code Instrumentation that adapts
+                                to changes in the application environment.</p>
+                            <div
+                                class="text-lightBlue500 font-bold flex items-center group hover:text-grayBlue transition-all duration-200">
+                                <a href="#">Know More</a>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                                    <path
+                                        d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z">
+                                    </path>
+                                </svg>
+                            </div>
+
+                            <img src="./assets/feature-section-1/features-wave.svg" alt=""
+                                class="h-16 w-20 absolute bottom-4 right-0 invisible group-hover:visible transition-all duration-100">
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+        <!-- feature section 2-->
+        <section
+            class="bg-[url(./assets/feature-section-2/feature-section-2BG.svg)] bg-no-repeat bg-cover pb-[500px] mt-14 lg:pt-[20rem] pt-[10rem]"
+            id="features">
+
+            <div class="relative w-11/12 max-w-[1080px] mx-auto pt-4 ">
+                <!--heading-->
+                <h2 class="font-extrabold text-center text-white text-5xl md:text-5xl leading-[1.2] ">Explore AppDynamics Features</h2>
+                <div class="bg-greenLight w-6 h-1 mx-auto mt-4 mb-6"></div>
+                <div class="relative">
+                    <img src="./assets/feature-section-2/x-flame-1.png" alt="" class="absolute w-52 -left-40 -top-36">
+                    <img src="./assets/feature-section-2/x-flame-2.png" alt="" class="absolute w-52 -right-44 top-36">
+
+
+                    <!-- content-box -->
+                    <div class="w-full min-h-[440px] flex  bg-featureBlue border border-slate-700 rounded-md relative p-10 py-12 ">
+
+                        <!-- left part text-->
+                        <div class="flex flex-col justify-between items-start">
+                            <!-- heading -->
+                            <h3 class="text-xl sm:text-3xl text-white font-bold max-w-lg">Context that changes everything using
+                                <span class="text-greenLight">App Dynamics</span>
+                            </h3>
+                            <!-- check elements -->
+                            <ul class="space-y-2">
+                                <li class="flex items-start space-x-2 ">
+                                    <i class="text-greenLight">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24"
+                                            height="24">
+                                            <path
+                                                d="M21.03 5.72a.75.75 0 0 1 0 1.06l-11.5 11.5a.747.747 0 0 1-1.072-.012l-5.5-5.75a.75.75 0 1 1 1.084-1.036l4.97 5.195L19.97 5.72a.75.75 0 0 1 1.06 0Z">
+                                            </path>
+                                        </svg>
+                                    </i>
+                                    <p class="text-white">Maximize business performance
+                                    </p>
+                                </li>
+                                <li class="flex items-start space-x-2 ">
+                                    <i class="text-greenLight">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24"
+                                            height="24">
+                                            <path
+                                                d="M21.03 5.72a.75.75 0 0 1 0 1.06l-11.5 11.5a.747.747 0 0 1-1.072-.012l-5.5-5.75a.75.75 0 1 1 1.084-1.036l4.97 5.195L19.97 5.72a.75.75 0 0 1 1.06 0Z">
+                                            </path>
+                                        </svg>
+                                    </i>
+                                    <p class="text-white">Tie user experiences to results
+
+                                    </p>
+                                </li>
+                                <li class="flex items-start space-x-2 ">
+                                    <i class="text-greenLight">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24"
+                                            height="24">
+                                            <path
+                                                d="M21.03 5.72a.75.75 0 0 1 0 1.06l-11.5 11.5a.747.747 0 0 1-1.072-.012l-5.5-5.75a.75.75 0 1 1 1.084-1.036l4.97 5.195L19.97 5.72a.75.75 0 0 1 1.06 0Z">
+                                            </path>
+                                        </svg>
+                                    </i>
+                                    <p class="text-white">Optimize your digital investments
+                                    </p>
+                                </li>
+                            </ul>
+                            <!-- get started button & hyperlink -->
+
+                            <div class="flex justify-center space-x-6">
+                                <button
+                                    class="relative bg-lightBlue h-14 text-white flex justify-evenly items-center space-x-4 py-4 px-6 rounded-md font-mullish text-lg font-bold hover:bg-lightBlue500 transition-all duration-200">
+                                    <p>Sign Up</p>
+                                    <div class="bg-greenLight skew-x-12 h-16 w-10 flex justify-center items-center">
+                                    </div>
+                                    <svg class="absolute right-8 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                        fill="currentColor" width="24" height="24">
+                                        <path
+                                            d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z">
+                                        </path>
+                                    </svg>
+
+                                </button>
+                                <!-- know more hyperlink -->
+                                <div
+                                    class="text-lightBlue500 font-bold flex justify-center items-center group hover:text-grayBlue transition-all duration-200">
+                                    <a href="#">Know More</a>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                                        <path
+                                            d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z">
+                                        </path>
+                                    </svg>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--right part-->
+                        <img src="./assets/feature-section-2/Untitled design.png" alt=""
+                            class="lg:max-w-[450px] max-w-[300px] absolute right-0 bottom-0 z-4 hidden md:inline">
+                    </div>
+
+                    <!-- check-out footer -->
+                    <div
+                        class="w-full flex flex-col md:flex-row space-y-6 md:space-y-0 items-center justify-between bg-featureBlue border border-slate-700 rounded-md relative py-8 px-10 my-14">
+                        <p class="text-white text-xl">Check out live demo to learn how AppDynamics works.
+                            <span class="font-bold">No sign-up required!</span>
+                        </p>
+                        <!-- get started button & hyperlink -->
+
+                        <div class="flex justify-center space-x-6">
+                            <a href="https://capture.navattic.com/clqe7png0000g0fjscou08md7?g=clqe85mbc00h10gjl37glc2al&s=0"><button
+                                    class="relative bg-lightBlue h-14 text-white flex justify-evenly items-center space-x-4 py-4 px-6 rounded-md font-mullish text-lg font-bold hover:bg-lightBlue500 transition-all duration-200">
+                                    <p>Check out the demo</p>
+                                    <div class="bg-greenLight skew-x-12 h-16 w-10 flex justify-center items-center">
+                                    </div>
+                                    <svg class="absolute right-8 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                        fill="currentColor" width="24" height="24">
+                                        <path
+                                            d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z">
+                                        </path>
+                                    </svg>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--blogs -->
+        <section class="relative bg-white" id="blog">
+            <div class="relative w-11/12 max-w-[1080px] mx-auto pt-4 ">
+                <img class="absolute h-40 w-60 -top-20 -right-10 z-0 invisible lg:visible"
+                    src="./assets/feature-section-1/feature-section1-dottedrows.png" alt="">
+                <img class="absolute h-40 w-60 left-1/4 -top-20 z-0 invisible lg:visible"
+                    src="./assets/feature-section-1/feature-section1-dottedrows.png" alt="">
+                <!--content box-->
+
+                <div
+                    class="grid w-full lg:grid-rows-2 lg:grid-cols-3 md:grid-rows-3 md:grid-cols-2 grid-rows-6 grid-cols-1 gap-y-10 gap-x-4 ">
+
+                    <!-- blog box -1 / Main heading -->
+                    <div class="flex justify-between items-center p-6 z-50 ">
+                        <h3 class="text-4xl font-extrabold leading-[3.375rem] text-deepBlueHead">Checkout
+                            <span class="text-lightBlue">All Articles</span>
+
+                        </h3>
+                    </div>
+
+                    <!-- blog box -2  -->
+                    <div
+                        class="flex flex-col justify-between max-h-[300px] w-full bg-[url(/assets/more-features-section/instant-settlement-bg.svg)] bg-no-repeat p-10 z-50 bg-white shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px]  hover:scale-105 transition-all duration-200 hover:bg-[url(/assets/more-features-section/instant-settlement-bghover.svg)]">
+                        <h3 class="text-lg pt-3 font-bold text-deepBlueHead">Cisco and Spectro Cloud: Easy Kubernetes® observability
+                        </h3>
+                        <p class="text-grayText py-3">Begin with the end in mind and lessons learned “We may be very busy, we may be very
+                            ‘efficient’, but we will also be truly...</p>
+                        <div class="text-lightBlue500 font-bold flex items-center group hover:text-grayBlue transition-all duration-200">
+                            <a href="#">Read More</a>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                                <path
+                                    d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- blog box -3  -->
+                    <div
+                        class="flex flex-col justify-between max-h-[300px] w-full bg-[url(/assets/more-features-section/instant-settlement-bg.svg)] bg-no-repeat p-10 z-50 bg-white shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px]  hover:scale-105 transition-all duration-200 hover:bg-[url(/assets/more-features-section/instant-settlement-bghover.svg)]">
+                        <h3 class="text-lg pt-3 font-bold text-deepBlueHead">Improving workflow performance through a unified observability
+                            experience
+                        </h3>
+                        <p class="text-grayText py-3">In today’s press release, Cisco Unveils New Innovations on the Cisco Observability
+                            Platform...</p>
+                        <div class="text-lightBlue500 font-bold flex items-center group hover:text-grayBlue transition-all duration-200">
+                            <a href="#">Read More</a>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                                <path
+                                    d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- blog box -4  -->
+                    <div
+                        class="flex flex-col justify-between max-h-[300px] w-full bg-[url(/assets/more-features-section/instant-settlement-bg.svg)] bg-no-repeat p-10 z-50 bg-white shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px]  hover:scale-105 transition-all duration-200 hover:bg-[url(/assets/more-features-section/instant-settlement-bghover.svg)]">
+                        <h3 class="text-lg pt-3 font-bold text-deepBlueHead">Cisco AppDynamics: A Gartner® Customers’ Choice Vendor
+
+                        </h3>
+                        <p class="text-grayText py-3">At Cisco, customers are the heartbeat of our business — their feedback is incredibly
+                            important...</p>
+                        <div class="text-lightBlue500 font-bold flex items-center group hover:text-grayBlue transition-all duration-200">
+                            <a href="#">Read More</a>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                                <path
+                                    d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                    <!-- blog box -5  -->
+                    <div
+                        class="flex flex-col justify-between max-h-[300px] w-full bg-[url(/assets/more-features-section/instant-settlement-bg.svg)] bg-no-repeat p-10 z-50 bg-white shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px]  hover:scale-105 transition-all duration-200 hover:bg-[url(/assets/more-features-section/instant-settlement-bghover.svg)]">
+                        <h3 class="text-lg pt-3 font-bold text-deepBlueHead">Seven innovative observability features to explore in the new
+                            year
+                        </h3>
+                        <p class="text-grayText py-3">In our latest App Attention Index, consumers showed unprecedented levels...</p>
+                        <div class="text-lightBlue500 font-bold flex items-center group hover:text-grayBlue transition-all duration-200">
+                            <a href="#">Read More</a>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                                <path
+                                    d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                    <!-- blog box -6  -->
+                    <div
+                        class="flex flex-col justify-between max-h-[300px] w-full bg-[url(/assets/more-features-section/instant-settlement-bg.svg)] bg-no-repeat p-10 z-50 bg-white shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px]  hover:scale-105 transition-all duration-200 hover:bg-[url(/assets/more-features-section/instant-settlement-bghover.svg)]">
+                        <h3 class="text-lg pt-3 font-bold text-deepBlueHead">Cisco Secure Application: Fulfilling the APM + ASM promise for
+                            OpenTelemetry
+                        </h3>
+                        <p class="text-grayText py-3">When DevOps began taking hold around 2007, it was meant as a mechanism...</p>
+                        <div class="text-lightBlue500 font-bold flex items-center group hover:text-grayBlue transition-all duration-200">
+                            <a href="#">Read More</a>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                                <path
+                                    d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- FAQs -->
+        <section class="w-full bg-[url(/assets/more-features-section/core-features-sectionBg.svg)] 
+  bg-no-repeat bg-cover bg-center mt-14 relative corefeaturesection" id="faqs">
+            <div class="relative w-11/12 max-w-[1080px] mx-auto pt-4">
+
+                <!--heading-->
+                <h2 class="font-extrabold text-center text-white text-2xl leading-[1.2] pt-40 md:pt-0">AppDynamics FAQs
+                </h2>
+                <div class="bg-blue-950 w-6 h-1 mx-auto mt-4 mb-6"></div>
+
+                <!-- content -->
+                <div class="grid w-full lg:grid-rows-2 lg:grid-cols-4 md:grid-rows-4 md:grid-cols-2 grid-rows-8 grid-cols-1">
+                    <!-- feature box -1  -->
+                    <div class="flex flex-col justify-between max-h-[300px] w-full] bg-no-repeat p-6 z-50">
+                        <img class="h-10 w-10" src="./assets/more-features-section/instant-activation-icon.svg" alt="">
+                        <h3 class="text-lg pt-3 font-bold text-white">What is AppDynamics? </h3>
+                        <p class="text-white py-3">You can boost business productivity with AppDynamics. With AppDynamics, you can monitor
+                            any organization's software and hardware performance. You can easily find a solution to issues in configurations
+                            and performance.
+                        </p>
+                    </div>
+
+                    <!-- feature box -2  -->
+                    <div class="flex flex-col justify-between max-h-[300px] w-full] bg-no-repeat p-6 z-50">
+                        <img class="h-10 w-10" src="./assets/more-features-section/instant-activation-icon.svg" alt="">
+                        <h3 class="text-lg pt-3 font-bold text-white">⁠What is the benefit of AppDynamics?
+
+                        </h3>
+                        <p class="text-white py-3">You can resolve performance issues quickly. All the applications can be tracked and
+                            reported through visual analytics. Mainly, you can get good visibility across the application performance and
+                            drive business to new levels.
+                        </p>
+                    </div>
+
+                    <!-- feature box -3  -->
+                    <div class="flex flex-col justify-between max-h-[300px] w-full] bg-no-repeat p-6 z-50">
+                        <img class="h-10 w-10" src="./assets/more-features-section/instant-activation-icon.svg" alt="">
+                        <h3 class="text-lg pt-3 font-bold text-white">What does an AppDynamics agent do?
+                        </h3>
+                        <p class="text-white py-3">Agents collect application metrics to build flow maps. They also monitor application
+                            codes, execution, and behavior. They find the widely used frameworks and services automatically.
+                        </p>
+                    </div>
+
+                    <!-- feature box -4  -->
+                    <div class="flex flex-col justify-between max-h-[300px] w-full] bg-no-repeat p-6 z-50">
+                        <img class="h-10 w-10" src="./assets/more-features-section/instant-activation-icon.svg" alt="">
+                        <h3 class="text-lg pt-3 font-bold text-white">How can I submit a support ticket in AppDynamics?
+                        </h3>
+                        <p class="text-white py-3">You can use the support portal on the AppDynamics website and raise a new request.
+                        </p>
+                    </div>
+                </div>
+        </section>
+
+    </div>
+</body>
+
+</html>
